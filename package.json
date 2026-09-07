@@ -1,0 +1,31 @@
+{
+  "name": "eventflow-api",
+  "version": "1.0.0",
+  "description": "Event booking platform backend — Fastify + Supabase (Postgres + Auth), PDF/QR receipts, Postgres-backed job queue",
+  "type": "module",
+  "private": true,
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@fastify/cors": "11.3.0",
+    "@fastify/rate-limit": "11.2.0",
+    "@supabase/supabase-js": "2.115.0",
+    "dotenv": "17.4.2",
+    "fastify": "5.12.3",
+    "jose": "6.2.12",
+    "nodemailer": "10.0.0",
+    "pdfkit": "0.20.2",
+    "pg": "8.23.0",
+    "pino": "10.3.1",
+    "pino-http": "11.0.0",
+    "qrcode": "1.5.4",
+    "zod": "4.5.4"
+  }
+}
